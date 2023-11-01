@@ -1,0 +1,19 @@
+--- common/src/main/java/com/ongres/scram/common/message/ServerFinalMessage.java  2019-06-28 19:55:36.000000000 +0200
++++ common/src/main/java/com/ongres/scram/common/message/ServerFinalMessage.java.new  2023-01-02 13:55:25.491161211 +0100
+@@ -37,8 +37,6 @@
+ import com.ongres.scram.common.util.StringWritable;
+ import com.ongres.scram.common.util.StringWritableCsv;
+
+-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+-
+
+ /**
+  * Constructs and parses server-final-messages. Formal syntax is:
+@@ -162,7 +160,6 @@
+         return null != error;
+     }
+
+-    @SuppressFBWarnings("EI_EXPOSE_REP")
+     public byte[] getVerifier() {
+         return verifier;
+     }
